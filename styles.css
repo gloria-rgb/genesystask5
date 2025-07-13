@@ -1,0 +1,95 @@
+* {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* css variables  */
+
+:root{
+    --primary: #6bd9f5;
+    --heading:   #105499;
+    --innerbg: #fff;
+    --bg2: #d4dfd5;
+}
+
+body{
+    background-color: var(--primary);
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+}
+    .container {
+      max-width: 1000px;
+      height: auto;
+      margin: 0 auto;
+      background: var(--innerbg);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 20px 20px 20px rgba(20, 20, 20, 0.1);
+    }
+    h1 {
+      color: var(--primary);
+      text-align: center;
+      font-size: 32px;
+    }
+    h2 {
+      color: var(--heading);
+      margin-top: 30px;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    .highlight {
+      background: var(--bg2);
+      color: var(--heading);
+      padding: 10px;
+      border-left: 4px solid #062b91;
+      border-radius: 10px;
+    }
+
+    .webdev{
+        background-color: var(--primary);
+    }
+
+    /* uses  */
+    .uses{
+      max-width: 1000px;
+      margin: 30px auto;
+      background: linear-gradient(to top, var(--bg2),var(--heading));
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 20px 20px 20px rgba(20, 20, 20, 0.1);
+      color: #fff;
+    }
+
+    .use_list{
+        text-align: left;
+        padding: 10px;
+        font-size: 30px;
+    }
+
+    .use_list ol{
+        margin-left: 20px;
+    }
+
+    /* usergrid  */
+    .use_expgrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    @media (max-width: 600px) {
+  .use_expgrid {
+    grid-template-columns: 1fr;
+  }
+}
+    .use_exp1, .use_exp2, .use_exp3, .use_exp4{
+        background-color: var(--bg2);
+        color: black;
+        padding: 20px;
+        border: 5px solid var(--innerbg)
+    }
